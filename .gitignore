@@ -52,3 +52,5 @@ captures/
 
 ### Android Patch ###
 gen-external-apklibs
+
+app/src/main/res/values/api_keys.xml
