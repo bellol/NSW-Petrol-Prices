@@ -4,7 +4,6 @@ import android.content.SharedPreferences;
 import android.preference.PreferenceManager;
 
 import com.bellng.fuelprices.presenter.DashboardPresenter;
-import com.bellng.fuelprices.presenter.FuelPresenter;
 import com.bellng.fuelprices.presenter.ServiceStationListPresenter;
 import com.bellng.fuelprices.presenter.SettingsPresenter;
 import com.bellng.fuelprices.service.FuelService;
@@ -37,11 +36,6 @@ public class AppModule {
     @Singleton
     FuelApplication provideFuelApplication() {
         return application;
-    }
-
-    @Provides
-    FuelPresenter provideFuelPresenter(FuelService service, GoogleApiClient googleApiClient) {
-        return new FuelPresenter(service, googleApiClient);
     }
 
     @Provides

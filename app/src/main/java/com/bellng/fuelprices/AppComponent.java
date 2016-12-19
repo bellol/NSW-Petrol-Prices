@@ -1,7 +1,6 @@
 package com.bellng.fuelprices;
 
 import com.bellng.fuelprices.activity.DashboardActivity;
-import com.bellng.fuelprices.activity.FuelActivity;
 import com.bellng.fuelprices.activity.ServiceStationListActivity;
 import com.bellng.fuelprices.activity.SettingsActivity;
 
@@ -16,8 +15,6 @@ import dagger.Component;
 @Singleton
 @Component(modules={AppModule.class})
 public interface AppComponent {
-    void inject(FuelActivity activity);
-
     void inject(DashboardActivity activity);
 
     void inject(ServiceStationListActivity activity);
