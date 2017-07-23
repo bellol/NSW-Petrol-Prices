@@ -168,5 +168,5 @@ fabric.properties
 # Google Services plugin
 
 !/gradle/wrapper/gradle-wrapper.jar
-
+app/src/main/res/values/api_keys.xml
 # End of https://www.gitignore.io/api/android,androidstudio
